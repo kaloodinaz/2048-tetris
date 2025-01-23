@@ -2,8 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>2048-Tetris</title>
-
+  <title>2048 Tetris - A Unique Puzzle Game Mashup</title>
+    <link rel="manifest" href="/manifest.json"/>
+<meta name="theme-color" content="#151515" />
   <link href="style/main.css" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
@@ -11,15 +12,19 @@
 
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="description" content="Discover 2048 Tetris, the ultimate fusion of two iconic games! Combine tiles and stack strategically to achieve high scores in this addictive puzzle experience. Play now for free!"/>
   <meta property="og:title" content="2048 Tetris"/>
   <meta property="og:site_name" content="2048 Tetris"/>
   <meta property="og:description" content="2048 with the awesomeness of Tetris! Careful: this game is extremely addictive!"/>
-  <meta property="og:image" content="http://gabrielecirulli.github.io/2048/meta/og_image.png"/>
+  <meta property="og:image" content="meta/apple-touch-icon.png"/>
 </head>
-<!-- body starts here-->
 <body>
+<script>
+      if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('sw.js')
+      .then(registration => {console.log('Service Worker registered successfully:', registration);})
+      .catch(error => {console.log('Error in Service Worker registration:', error);});});}
+      </script>
   <div class="next-tile-container"></div>
   <div class="container">
     <div class="heading">
@@ -94,14 +99,9 @@
     </p>
     <hr>
     <p>
-    Enhanced by <a href="http://github.com/prat0318" target="_blank">Prateek Agarwal</a>. 2048 Created by <a href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli.</a> Based on <a href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024 by Veewo Studio</a> and conceptually similar to <a href="http://asherv.com/threes/" target="_blank">Threes by Asher Vollmer.</a>
+    Enhanced by <a href="https://kaloodinaz.github.io/" target="_blank">Kaloo Dinaz</a>. 2048 Created by <a href="https://kaloodinaz.github.io/2048-online/" target="_blank">Kaloo Dinaz</a> Based on <a href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024 by Veewo Studio</a> </a>
     </p>
-    <div class="sharing">
-      <iframe src="http://ghbtns.com/github-btn.html?user=prat0318&repo=2048-tetris&type=watch"
-      allowtransparency="true" frameborder="0" scrolling="0" width="62" height="20"></iframe>
-      <iframe src="http://ghbtns.com/github-btn.html?user=prat0318&repo=2048-tetris&type=fork"
-        allowtransparency="true" frameborder="0" scrolling="0" width="53" height="20"></iframe>
-    </div>
+    
   </div>
 
   <script type='text/javascript' > 
@@ -114,14 +114,14 @@
     window.HARD = 0.85;
     window.FACTOR = window.MEDIUM;
   </script>
-  <script src="js/animframe_polyfill.js"></script>
-  <script src="js/keyboard_input_manager.js"></script>
-  <script src="js/html_actuator.js"></script>
-  <script src="js/grid.js"></script>
-  <script src="js/tile.js"></script>
-  <script src="js/local_score_manager.js"></script>
-  <script src="js/game_manager.js"></script>
-  <script src="js/application.js"></script>
+  <script defer src="js/animframe_polyfill.js"></script>
+  <script defer src="js/keyboard_input_manager.js"></script>
+  <script defer src="js/html_actuator.js"></script>
+  <script defer src="js/grid.js"></script>
+  <script defer src="js/tile.js"></script>
+  <script defer src="js/local_score_manager.js"></script>
+  <script defer src="js/game_manager.js"></script>
+  <script defer src="js/application.js"></script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
