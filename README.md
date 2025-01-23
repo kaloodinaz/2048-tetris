@@ -1,5 +1,5 @@
 # 2048-tetris
-A [2048](http://git.io/2048) version with the goodness of Tetris.
+A [2048](https://kaloodinaz.github.io/2048-online/) version with the goodness of Tetris.
 
 Made just for fun. [Play it here!](https://kaloodinaz.github.io/2048-tetris)
 
